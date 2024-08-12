@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar números de Vocales</title>
+</head>
+
+<body>
+    <h1>Contar números de Vocales</h1>
+    
+    <script>
+        function contadorDeVocales(cadena) {
+        let coincidencias = cadena.match(/[aeiou]/gi);
+        return coincidencias ? coincidencias.length : 0;
+        }
+
+        console.log(contadorDeVocales("Esto es una prueba"));
+
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palíndromo</title>
+</head>
+
+<body>
+    <h1>Verificar palindromo</h1>
+
+    <script>
+
+        function palindromo(cadena) {
+        let cadenaLimpia = cadena.replace(/[\W_]/g, '').toLowerCase();
+        let cadenaReversa = cadenaLimpia.split('').reverse().join('');
+        return cadenaLimpia === cadenaReversa;
+        }
+
+        console.log(palindromo("Yo hago yoga hoy"));
+
+    </script>
+    
+</body>
+</html>
